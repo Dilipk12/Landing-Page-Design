@@ -9,7 +9,7 @@ Welcome to the Landing Page frontend repository! This project provides a modern,
   - Technologies Used
 
 # Demo
-- link
+- [landingpagedesign6.netlify.app](https://landingpagedesign6.netlify.app/)
 
 # Features
 - Hero Section: Capture user attention with a compelling hero section featuring a headline, subheadline, and call-to-action button.
