@@ -1,0 +1,711 @@
+
+/* clash display font  */
+@font-face {
+    font-family: 'ClashDisplay-Variable';
+    src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Variable.woff') format('woff'),
+         url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  /* color variables */
+:root {
+    --red : #FF5555;
+    --black : #000000;
+    --white : #FFFFFF;
+}
+
+body {
+    font-family: ClashDisplay-Variable;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Header section style start */
+header {
+    height: 60px;
+    width: 1090px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 14px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--black);
+}
+.active {
+    font-weight: 700;
+    color: var(--red);
+}
+
+.download-btn {
+    font-family: ClashDisplay-Variable;
+    height: 60px;
+    width:180px;
+    padding: 0.5em 1em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 18px
+}
+
+/* Header section style end */
+
+/* Main section style start */
+
+main{
+    width: 1090px;
+    margin: 0 auto;
+}
+
+/* Hero section style start */
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    color: var(--black);
+}
+.blurcircle{
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    z-index: -1;
+}
+.hero-star{
+    position: absolute;
+    top: -20px;
+    right: -100px;
+}
+.hero-star2{
+    position: absolute;
+    top: 0px;
+    left: -90px;
+    width: 48px;
+    height: 48px;
+}
+
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.hero-content p {
+    padding: 10px;
+    margin-top: -30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+    opacity: 60%;
+}
+
+.hero-buttons{
+    width: 374px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get-started-btn {
+    font-family: ClashDisplay-Variable;
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    width: 180px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    display:flex;
+    align-items : center;
+    justify-content: center;
+    cursor: pointer;
+}
+.get-started-btn img {
+    padding-left: 10px;
+}
+
+.watch-video-btn {
+    font-family: ClashDisplay-Variable;
+    border: none;
+    width: 180px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    background-color: var(--white);
+    color: var(--black);
+    display:flex;
+    align-items : center;
+    justify-content: end;
+    cursor: pointer;
+    
+}
+.watch-video-btn img {
+    padding-right: 15px; 
+}
+
+.hero-img-A img{
+    margin-left: -30px;
+}
+
+.hero-image{
+    position: absolute;
+    top: -15px;
+    right: -140px;
+}
+
+.hero-image img{
+    width: 685px;
+}
+
+/* Hero section style end */
+
+/* Feature section style start */
+
+.features{
+    position: relative;
+    display: flex;
+}
+.feature-img{
+    width: 50%;
+    pointer: relative;
+}
+.feature-img img{
+    position: absolute;
+    left: -100px;
+}
+.feature-content{
+    margin-top: 130px;
+    width: 50%;
+    padding-left: 30px;
+}
+.feature-content h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1px;
+    letter-spacing: 3px;
+    color: var(--red)
+}
+.feature h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1px;
+}
+.feature-title{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.feature-title h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1px;
+}
+
+.feature p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+    opacity: 60%;
+    margin-top: -0px;
+}
+.blurcircle1{
+    width: 500px;
+    position: absolute;
+    top: 70px;
+    right: -350px;
+    z-index: -1;
+}
+/* Feature section style end */
+
+/* Advantage section style start */
+
+.advantages{
+    position: relative;
+    display: flex;
+}
+
+.advantage-img{
+    width: 50%;
+    pointer: relative;
+}
+.advantage-img img{
+    position: absolute;
+    top: 50px;
+    right: -110px;
+}
+.advatages-content{
+    padding-top: 135px;
+}
+
+
+.hero-star3{
+    position: absolute;
+    top: 130px;
+    right: -120px;
+}
+.hero-star4{
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 700px;
+    left: 400px;
+}
+
+/* Advantage section style end */
+
+/* Customizable section style start */
+
+.customize{
+    padding: 150px 0;
+    position: relative;
+    display: flex;
+}
+
+.customize-img img{
+    position: absolute;
+    left: -100px;
+}
+.customize-img{
+    width: 50%;
+    position: relative;
+}
+.customizable{
+    width: 50%;
+}
+.customize-title h3{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1px;
+}
+
+.customize-title{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.customizable p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+    opacity: 60%;
+    margin-top: -0px;
+}
+
+.customizable{
+    padding-top: 210px;
+    padding-left: 30px;
+}
+
+/* Customizable section style end */
+
+/* Testimonial section style start */
+
+.testimonial{
+    position: relative;
+    padding-top: 140px;
+}
+
+.testimonial-content p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1px;
+    letter-spacing: 3px;
+    color: var(--black);
+   
+}
+.testimonial-content h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.testimonials{
+    position: relative;
+    display: flex;
+}
+
+.testimonials-img img{
+    position: absolute;
+    left: -100px;
+}
+.testimonials-img{
+    width: 50%;
+    position: relative;
+}
+
+.testimonials-details{
+    width: 50%;
+    padding-top: 130px;
+    padding-left: 130px;
+    padding-right: 80px;
+}
+.testimonials-details h1{
+    Weight:600;
+    font-size:28px;
+    Line-height:28px;
+}
+.testimonials-details p{
+    Weight:500;
+    font-size:18px;
+    Line-height:28px;
+}
+.testimo-img{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.demo-img{
+    height: 30px;
+    width:30px;
+    opacity: 60%;
+}
+.activeimg{
+    height: 40px;
+    width: 40px;
+    opacity:1;
+}
+.testimonials-details h2{
+    Weight:600;
+    font-size:18px;
+    Line-height:28px;
+}
+
+.hero-star5{
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.hero-star6{
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 900px;
+    left: -80px;
+}
+
+/* Testimonial section style end */
+
+/* FAQ section style start */
+
+.FAQ{
+    position: relative;
+    padding-top: 250px;
+}
+.hero-star9{
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    top: 350px;
+    left: 650px;
+}
+.FAQ-content p{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1px;
+    letter-spacing: 3px;
+    color: var(--red);
+}
+.FAQ-content h1{
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--black);
+}
+
+.FAQ-Details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 80px;
+}
+
+.FAQ-Question{
+    width: 440px;
+    height: 181px;
+    border-radius: 8px;
+    background: var(--red);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+.FAQ-Question h1{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    color: var(--white);
+}
+.FAQ-Question p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white);
+    margin-top: -10px;
+    text-align: justify;
+}
+
+.FAQ-Question-white{
+    width: 440px;
+    height: 181px;
+    border-radius: 8px;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+.FAQ-Question-white h1{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    color: var(--black);
+}
+.FAQ-Question-white p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--black);
+    margin-top: -10px;
+    text-align: justify;
+}
+
+/* FAQ section style end */
+
+/* download section style start */
+
+.download{
+    background-image: url('/Images/mobileBackground.png');
+    background-size: cover;
+    background-position: center;
+    height: 509px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.download-content{
+    padding-top: 113px;
+    padding-left: 80px;
+}
+.download-content h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--white);
+}
+
+.download-content p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white);
+    margin-top: -20px;
+}
+.download-content button{
+    font-family: ClashDisplay-Variable;
+    height: 60px; 
+    weight: 208px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.download-content button img{
+    padding-left: 12px;
+}
+
+.blurcircle2{
+    position: absolute;
+    top: -180px;
+    left: -200px;
+    z-index: -1;
+}
+
+.hero-star7{
+    position: absolute;
+    top: 90px;
+    left: -90px;
+    width: 48px;
+    height: 48px;
+}
+
+.hero-star8{
+    position: absolute;
+    top: -80px;
+    right: -90px;
+    width: 64px;
+    height: 64px;
+}
+
+/* download section style end */
+
+/* Footer section style start */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    padding-bottom: 100px;
+}
+
+.contactDetails h1{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+}
+.contactDetails h1 img{
+    padding-right: 10px;
+}
+
+.links h1{
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.navlinks{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+.navlinks a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.Legal h1{
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+.terms h1{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.product h1{
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.ProductDetails h1{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.newsletter h1{
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.newsletter p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.email input{
+    border: none;
+    outline: none;
+    width: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding-left: 20px;
+    font-family: ClashDisplay-Variable;
+
+}
+.email button{
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    cursor: pointer; 
+    padding: 18px 45px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 4px;
+    font-family: ClashDisplay-Variable;
+}
+/* Footer section style end */
+
+.copyright{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid black;
+}
+
+/* Main section style end */
+
